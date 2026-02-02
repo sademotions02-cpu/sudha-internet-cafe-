@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Sudha Internet Cafe | Online & Government Services</title>
   <meta name="description" content="Sudha Internet Cafe - Train Ticket Booking, Aadhaar PAN Services, Online Form Filling, Bill Payment, UP Bhulekh, Sarkari Exam and more."/>
   <meta name="keywords" content="Internet Cafe, Sudha Internet Cafe, Train Ticket, Aadhaar PAN, Online Form, UP Bhulekh, Sarkari Exam, Mahoba"/>
@@ -20,21 +19,21 @@
     }
     a{ text-decoration:none; }
 
-    /* HEADER / BANNER */
+    /* HERO / BANNER */
     .hero{
-      background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-      url("https://images.unsplash.com/photo-1581090700227-1e37b190418e");
-      background-size:cover;
-      background-position:center;
+      background:linear-gradient(135deg, #ff6f00, #ffd700);
+      color:#fff;
       padding:90px 20px;
       text-align:center;
-      color:#fff;
+      border-bottom-left-radius:50px;
+      border-bottom-right-radius:50px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
     }
     .hero h1{
       font-size:42px;
       margin-bottom:10px;
-      color:#ffd700;
       letter-spacing:1px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
     }
     .hero p{
       font-size:18px;
@@ -55,7 +54,7 @@
       color:#1a237e;
     }
 
-    /* SERVICES GRID */
+    /* GRID CARDS */
     .grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -71,6 +70,7 @@
     }
     .card:hover{
       transform:translateY(-6px);
+      box-shadow:0 15px 30px rgba(0,0,0,0.2);
     }
     .card i{
       font-size:36px;
@@ -82,10 +82,17 @@
       margin-bottom:8px;
     }
 
-    /* LINKS */
-    .card a{
+    /* LINKS SPECIAL */
+    .link-card a{
+      display:inline-block;
       color:#1a237e;
       font-weight:bold;
+      text-decoration:none;
+      transition: all 0.3s ease;
+    }
+    .link-card a:hover{
+      color:#ff0066;
+      transform: scale(1.1) rotate(-2deg);
     }
 
     /* OWNER */
@@ -107,6 +114,18 @@
       object-fit:cover;
       border:5px solid #ffd700;
     }
+    .owner-text h3{
+      font-size:28px;
+      font-weight:bold;
+      background: linear-gradient(to right, #ff6f00, #ff0066);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 1px 1px rgba(0,0,0,0.2);
+    }
+    .owner-text p{
+      font-size:18px;
+      color:#555;
+    }
 
     /* CONTACT */
     .contact{
@@ -116,22 +135,30 @@
       padding:50px 20px;
     }
     .contact h3{
-      margin-bottom:10px;
+      margin-bottom:15px;
       font-size:26px;
       color:#ffd700;
+    }
+    .contact a{
+      color:#ffd700;
+      margin:0 10px;
+      font-size:24px;
+      transition: transform 0.3s ease;
+    }
+    .contact a:hover{
+      transform: scale(1.2) rotate(-5deg);
     }
 
     /* FOOTER */
     footer{
       text-align:center;
-      padding:15px;
+      padding:20px;
       background:#0d1333;
       color:#ccc;
       font-size:14px;
     }
   </style>
 </head>
-
 <body>
 
   <!-- HERO -->
@@ -140,7 +167,7 @@
     <p>All Online, Digital & Government Services Under One Roof</p>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES SECTION -->
   <section class="section">
     <h2>Our Services</h2>
     <div class="grid">
@@ -158,68 +185,26 @@
     </div>
   </section>
 
-  <!-- IMPORTANT LINKS -->
+  <!-- LINKS SECTION -->
   <section class="section">
     <h2>Important Online Links</h2>
     <div class="grid">
-
-      <div class="card"><i class="fa-solid fa-graduation-cap"></i>
-        <a href="https://www.sarkariexam.com/" target="_blank">Sarkari Exam</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-gift"></i>
-        <a href="https://scholarship.up.gov.in/" target="_blank">UP Scholarship</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-address-card"></i>
-        <a href="https://myaadhaar.uidai.gov.in/" target="_blank">Aadhaar Portal</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-lock"></i>
-        <a href="https://www.digilocker.gov.in/" target="_blank">DigiLocker</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-id-badge"></i>
-        <a href="https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank">PAN Card</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-map"></i>
-        <a href="http://www.upbhunaksha.gov.in/" target="_blank">UP Bhunaksha</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-landmark"></i>
-        <a href="https://upbhulekh.gov.in/#/selection" target="_blank">UP Bhulekh</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-file-lines"></i>
-        <a href="https://ekhasra.up.gov.in/#/khasrareport" target="_blank">UP e-Khasra</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-image"></i>
-        <a href="https://imresizer.com/" target="_blank">Image Resize Tool</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-compress"></i>
-        <a href="https://imresizer.com/resize-image-to-50kb" target="_blank">Resize to 50KB</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-train"></i>
-        <a href="https://www.irctc.co.in/nget/train-search" target="_blank">IRCTC Booking</a>
-      </div>
-
-      <div class="card"><i class="fa-brands fa-facebook"></i>
-        <a href="https://www.facebook.com/share/1AAm4ft91x/" target="_blank">Facebook Page</a>
-      </div>
-
-      </div>
-      <div class="card"><i class="fa-solid fa-credit-card"></i>
-        <a href="https://www.cibil.com/freecibilscore" target="_blank">Free CIBIL Check</a>
-      </div>
-    
+      <div class="card link-card"><i class="fa-solid fa-graduation-cap"></i><a href="https://www.sarkariexam.com/" target="_blank">Sarkari Exam</a></div>
+      <div class="card link-card"><i class="fa-solid fa-gift"></i><a href="https://scholarship.up.gov.in/" target="_blank">UP Scholarship</a></div>
+      <div class="card link-card"><i class="fa-solid fa-address-card"></i><a href="https://myaadhaar.uidai.gov.in/" target="_blank">Aadhaar Portal</a></div>
+      <div class="card link-card"><i class="fa-solid fa-lock"></i><a href="https://www.digilocker.gov.in/" target="_blank">DigiLocker</a></div>
+      <div class="card link-card"><i class="fa-solid fa-id-badge"></i><a href="https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank">PAN Card</a></div>
+      <div class="card link-card"><i class="fa-solid fa-map"></i><a href="http://www.upbhunaksha.gov.in/" target="_blank">UP Bhunaksha</a></div>
+      <div class="card link-card"><i class="fa-solid fa-landmark"></i><a href="https://upbhulekh.gov.in/#/selection" target="_blank">UP Bhulekh</a></div>
+      <div class="card link-card"><i class="fa-solid fa-file-lines"></i><a href="https://ekhasra.up.gov.in/#/khasrareport" target="_blank">UP e-Khasra</a></div>
+      <div class="card link-card"><i class="fa-solid fa-image"></i><a href="https://imresizer.com/" target="_blank">Image Resize Tool</a></div>
+      <div class="card link-card"><i class="fa-solid fa-compress"></i><a href="https://imresizer.com/resize-image-to-50kb" target="_blank">Resize to 50KB</a></div>
+      <div class="card link-card"><i class="fa-solid fa-train"></i><a href="https://www.irctc.co.in/nget/train-search" target="_blank">IRCTC Booking</a></div>
+      <div class="card link-card"><i class="fa-solid fa-credit-card"></i><a href="https://www.cibil.com/freecibilscore" target="_blank">Free CIBIL Check</a></div>
+      <div class="card link-card"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/share/1AAm4ft91x/" target="_blank">Facebook Page</a></div>
     </div>
   </section>
 
- 
   <!-- OWNER -->
   <section class="section">
     <h2>Owner</h2>
@@ -238,7 +223,6 @@
     <p>📞 8318859580</p>
     <p>📍 In front of Gandhi Vidya Mandir J.H. School, Nanaura, Mahoba (U.P.)</p>
     <p>⏰ Open: 9:00 AM – 8:00 PM</p>
-    <!-- Facebook Icon -->
     <a href="https://www.facebook.com/share/1AAm4ft91x/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
   </section>
 
