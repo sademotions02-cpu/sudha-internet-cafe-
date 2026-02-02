@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Sudha Internet Cafe | Online & Government Services</title>
   <meta name="description" content="Sudha Internet Cafe - Train Ticket Booking, Aadhaar PAN Services, Online Form Filling, Bill Payment, UP Bhulekh, Sarkari Exam and more."/>
   <meta name="keywords" content="Internet Cafe, Sudha Internet Cafe, Train Ticket, Aadhaar PAN, Online Form, UP Bhulekh, Sarkari Exam, Mahoba"/>
@@ -14,30 +13,30 @@
   <style>
     body{
       margin:0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Arial', Helvetica, sans-serif;
       background:#f4f6f8;
       color:#333;
     }
     a{ text-decoration:none; }
 
-    /* HEADER / BANNER */
+    /* HERO / BANNER */
     .hero{
-      background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-      url("https://images.unsplash.com/photo-1581090700227-1e37b190418e");
-      background-size:cover;
-      background-position:center;
-      padding:90px 20px;
-      text-align:center;
+      background: linear-gradient(135deg, #ff6f00, #ffd700);
       color:#fff;
+      padding:100px 20px;
+      text-align:center;
+      border-bottom-left-radius:50px;
+      border-bottom-right-radius:50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
     .hero h1{
-      font-size:42px;
-      margin-bottom:10px;
-      color:#ffd700;
-      letter-spacing:1px;
+      font-size:48px;
+      margin-bottom:15px;
+      letter-spacing:2px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
     .hero p{
-      font-size:18px;
+      font-size:20px;
       max-width:800px;
       margin:auto;
     }
@@ -50,9 +49,19 @@
     }
     .section h2{
       text-align:center;
-      font-size:32px;
+      font-size:34px;
       margin-bottom:40px;
       color:#1a237e;
+      position: relative;
+    }
+    .section h2::after{
+      content:"";
+      display:block;
+      width:60px;
+      height:4px;
+      background:#ff6f00;
+      margin:10px auto 0 auto;
+      border-radius:2px;
     }
 
     /* SERVICES GRID */
@@ -81,14 +90,12 @@
       font-size:18px;
       margin-bottom:8px;
     }
-
-    /* LINKS */
     .card a{
       color:#1a237e;
       font-weight:bold;
     }
 
-    /* OWNER */
+    /* OWNER SECTION */
     .owner{
       display:flex;
       flex-wrap:wrap;
@@ -96,16 +103,34 @@
       align-items:center;
       justify-content:center;
       background:#fff;
-      padding:40px;
-      border-radius:20px;
+      padding:60px 20px;
+      border-radius:25px;
       box-shadow:0 10px 25px rgba(0,0,0,.1);
+      margin-bottom:60px;
     }
     .owner img{
       width:180px;
       height:180px;
       border-radius:50%;
       object-fit:cover;
-      border:5px solid #ffd700;
+      border:5px solid #ff6f00;
+    }
+    .owner-text{
+      max-width:400px;
+      text-align:center;
+    }
+    .owner-text h3{
+      font-size:28px;
+      font-weight:bold;
+      background: linear-gradient(to right, #ff6f00, #ff0066);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px rgba(0,0,0,0.2);
+      margin-bottom:10px;
+    }
+    .owner-text p{
+      font-size:18px;
+      color:#555;
     }
 
     /* CONTACT */
@@ -116,19 +141,25 @@
       padding:50px 20px;
     }
     .contact h3{
-      margin-bottom:10px;
+      margin-bottom:15px;
       font-size:26px;
       color:#ffd700;
+    }
+    .contact a{
+      color:#ffd700;
+      margin:0 10px;
+      font-size:24px;
     }
 
     /* FOOTER */
     footer{
       text-align:center;
-      padding:15px;
+      padding:20px;
       background:#0d1333;
       color:#ccc;
       font-size:14px;
     }
+
   </style>
 </head>
 
@@ -155,62 +186,9 @@
       <div class="card"><i class="fa-solid fa-camera"></i><h3>Passport Size Photo</h3></div>
       <div class="card"><i class="fa-solid fa-mobile"></i><h3>Mobile Recharge</h3></div>
       <div class="card"><i class="fa-solid fa-car"></i><h3>DL License Services</h3></div>
-    </div>
-  </section>
-
-  <!-- IMPORTANT LINKS -->
-  <section class="section">
-    <h2>Important Online Links</h2>
-    <div class="grid">
-
-      <div class="card"><i class="fa-solid fa-graduation-cap"></i>
-        <a href="https://www.sarkariexam.com/" target="_blank">Sarkari Exam</a>
+      <div class="card"><i class="fa-solid fa-credit-card"></i>
+        <a href="https://www.cibil.com/freecibilscore" target="_blank">Free CIBIL Check</a>
       </div>
-
-      <div class="card"><i class="fa-solid fa-gift"></i>
-        <a href="https://scholarship.up.gov.in/" target="_blank">UP Scholarship</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-address-card"></i>
-        <a href="https://myaadhaar.uidai.gov.in/" target="_blank">Aadhaar Portal</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-lock"></i>
-        <a href="https://www.digilocker.gov.in/" target="_blank">DigiLocker</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-id-badge"></i>
-        <a href="https://onlineservices.proteantech.in/paam/endUserRegisterContact.html" target="_blank">PAN Card</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-map"></i>
-        <a href="http://www.upbhunaksha.gov.in/" target="_blank">UP Bhunaksha</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-landmark"></i>
-        <a href="https://upbhulekh.gov.in/#/selection" target="_blank">UP Bhulekh</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-file-lines"></i>
-        <a href="https://ekhasra.up.gov.in/#/khasrareport" target="_blank">UP e-Khasra</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-image"></i>
-        <a href="https://imresizer.com/" target="_blank">Image Resize Tool</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-compress"></i>
-        <a href="https://imresizer.com/resize-image-to-50kb" target="_blank">Resize to 50KB</a>
-      </div>
-
-      <div class="card"><i class="fa-solid fa-train"></i>
-        <a href="https://www.irctc.co.in/nget/train-search" target="_blank">IRCTC Booking</a>
-      </div>
-
-      <div class="card"><i class="fa-brands fa-facebook"></i>
-        <a href="https://www.facebook.com/share/1AAm4ft91x/" target="_blank">Facebook Page</a>
-      </div>
-
     </div>
   </section>
 
@@ -219,10 +197,9 @@
     <h2>Owner</h2>
     <div class="owner">
       <img src="owner.jpg" alt="Suneel Kumar">
-      <div>
-       <p style="font-size: 28px; font-weight: bold; background: linear-gradient(to right, #ff6600, #ff0066);
-           -webkit-background-clip: text; color: transparent; text-shadow: 2px 2px #000;">
-  Owner – Suneel Kumar  
+      <div class="owner-text">
+        <h3>Suneel Kumar</h3>
+        <p>Owner</p>
       </div>
     </div>
   </section>
@@ -233,6 +210,8 @@
     <p>📞 8318859580</p>
     <p>📍 In front of Gandhi Vidya Mandir J.H. School, Nanaura, Mahoba (U.P.)</p>
     <p>⏰ Open: 9:00 AM – 8:00 PM</p>
+    <!-- Facebook Icon -->
+    <a href="https://www.facebook.com/share/1AAm4ft91x/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
   </section>
 
   <footer>
